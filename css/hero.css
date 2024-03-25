@@ -1,0 +1,56 @@
+.hero {
+  position: relative;
+  padding-top: 80px;
+  padding-bottom: 212px;
+  margin-bottom: 43px;
+  background-image: linear-gradient(47deg, #eb8a14 0%, #ecd55a 100%);
+  border-radius: 0 0 16px 16px;
+}
+
+.hero__container:after {
+  content: '';
+  position: absolute;
+  z-index: 2;
+  bottom: -43px;
+  right: calc(var(--offset-container) + 7px);
+  width: calc(100vw / (320 / 261));
+  height: calc(100vw / (320 / 230));
+  max-width: 382px;
+  max-height: 337px;
+  background-image: url('../img/cheese-slice-of-pizza.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.hero__content {
+  position: relative;
+  z-index: 4;
+  max-width: 300px;
+}
+
+.hero__title {
+  margin-bottom: 12px;
+  font-weight: 900;
+  font-size: 38px;
+  line-height: 1;
+  color: var(--dark);
+}
+
+.hero__tagline {
+  padding-left: 32px;
+  margin-bottom: 24px;
+  font-size: 14px;
+  color: var(--dark);
+  background-image: url('../img/delivery-pizza.svg');
+  background-repeat: no-repeat;
+  background-position: left;
+}
+
+.hero__order {
+  padding: 8px 24px;
+  border-radius: 32px;
+  background-color: var(--light);
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--orange);
+}
