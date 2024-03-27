@@ -28,11 +28,11 @@
 
 .toppings__list {
   display: none;
-  /* display: flex; */
   flex-wrap: wrap;
   gap: 8px;
-
-  /* todo!! */
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height .3s ease;
 }
 
 .toppings__list_show {
